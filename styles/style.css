@@ -1,0 +1,498 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+}
+html {
+    background: rgba(0, 0, 0, 0.65);
+}
+body {
+    width: 100%;
+    max-width: 1445px;
+    margin: 0 auto;
+    position: relative;
+}
+/*banner*/
+.banner {
+    position: relative;
+    width: 100%;
+    height: 709px;
+
+    background-image: url("/images/index/banner-image-1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.banner > div {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    color: #FFFFFF;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+.banner h1 {
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 48px;
+    letter-spacing: 0.3em;
+    margin: 336px 0 24px 0;
+}
+.banner p {
+    width: 386px;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+}
+.selector {
+    display: flex;
+    position: absolute;
+    bottom: 84px;
+}
+.selector span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #FFFFFF;
+    margin: 5px 6px 5px 6px;
+}
+/*main*/
+main {
+    background-image: url("/images/global/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*about*/
+.about {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 62px 11% 51px 11%;
+}
+.about img {
+    width: clamp(280px, 48%, 554px);
+}
+.about div {
+    width: clamp(280px, 48%, 554px);
+}
+.about div h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+
+    background-image: url("/images/index/about-title-bg.png");
+    background-repeat: repeat-y;
+    background-size: contain;
+
+    padding: 4px 18px 6px 15px;
+    margin-bottom: 31px;
+}
+.about div p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: .05em;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+.about div h2 + p {
+    margin-bottom: 31px;
+}
+.about div a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: .05em;
+    color: #2FB9D8;
+}
+/*services*/
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 54px 10% 53px 10%;
+    background-color: rgba(0, 0, 0, 0.51);
+}
+.services h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.25em;
+    font-weight: 700;
+    color: #FFFFFF;
+
+    margin-bottom: 79px;
+}
+.services img {
+    width: 133px;
+    margin-bottom: 23px;
+}
+.services h3 {
+    text-transform: uppercase;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 700;
+    color: #FFFFFF;
+
+    margin-bottom: 9px;
+}
+.services p {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    text-align: center;
+
+    margin-bottom: 5px;
+}
+.services a {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    color: #2FB9D8;
+
+    margin-bottom: 55px;
+}
+.services-group {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 54px;
+}
+.services-group p {
+    text-align: left;
+    margin-bottom: 0px;
+}
+.health, .banking {
+    display: flex;
+    align-items: center;
+    width: 45%;
+}
+.health img,
+.banking img {
+    width: 110px;
+    height: 110px;
+    margin-right: 26px;
+}
+.services a:last-child {
+    width: 466px;
+    color: #FFFFFF;
+    background-color: #000000;
+    border-radius: 15px;
+
+    font-size: 16px;
+    line-height: 19px;
+    font-weight: 700;
+    text-align: center;
+
+    padding: 17px 0;
+    margin-bottom: 0;
+}
+/*blog*/
+.blog {
+    width: 100%;
+    padding: 54px 10% 168px 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.blog h2 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    margin-bottom: 51px;
+}
+.posts {
+    width: 100%;
+    max-width: 1056px;
+    height: 493px;
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+.posts a {
+    color: #FFFFFF;
+    text-decoration: none;
+}
+.post1 {
+    width: 63.16%;
+    height: 100%;
+    background-image: url("/images/index/blog1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.post1 div {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 4%; 
+}
+.post-container {
+    width: 35.32%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.post2 {
+    width: 100%;
+    height: 47.76%;
+    background-image: url("/images/index/blog2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.post2 div {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 4%; 
+}
+.post3 {
+    width: 100%;
+    height: 47.76%;
+    background-image: url("/images/index/blog3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.post3 div {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+
+    padding: 4%; 
+}
+/*form*/
+form {
+    width: 762px;
+    height: 404px;
+    border-radius: 31px;
+
+    background-color: #E1E1E1;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding-top: 35px;
+    padding-bottom: 35px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    position: relative;
+}
+form h3 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+
+    margin-bottom: 4px;
+}
+form p {
+    width: 100%;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: .05em;
+    text-align: center;
+
+    margin-bottom: 33px;
+}
+form label {
+    width: 90%;
+    max-width: 507px;
+    margin-bottom: 21px;
+}
+form input {
+    width: 100%;
+    max-width: 507px;
+    height: 33px;
+
+    background-color: #F2F2F2;
+    border: 1px solid #FFFFFF;
+    border-radius: 20px;
+
+    padding-left: 4%;
+}
+form input::placeholder {
+    font-size: 12px;
+    line-height: 17px;
+    letter-spacing: .05em;
+    color: #969696;
+}
+form input:focus {
+    outline: none;
+}
+form button {
+    width: 202px;
+    height: 58px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+
+    background-color: #000000;
+    border-radius: 15px;
+    border: none;
+
+    position: absolute;
+    bottom: 35px;
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 1439px) {
+    .services-group {
+        flex-direction: column;
+    }
+    .health, .banking {
+        width: 100%;
+    }
+    .health {
+        margin-bottom: 55px;
+    }
+    form p {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1163px) {
+    .about {
+        flex-direction: column;
+    }
+    .about img {
+        width: 60%;
+        margin-bottom: 41px;
+    }
+    .about div {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about div a {
+        align-self: flex-start;
+    }
+    .posts {
+        flex-direction: column;
+    }
+    .post-container {
+        width: 100%;
+    }
+    .post1,
+    .post2,
+    .post3 {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    form {
+        width: 80%;
+    }
+}
+@media screen and (max-width: 767px) {
+    .banner {
+        height: 600px;
+    }
+    .banner h1 {
+        margin-top: 200px;
+        font-size: 23px;
+        font-weight: 700;
+    }
+    .banner p {
+        width: 85%;
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .about img {
+        width: 100%;
+    }
+    .about div {
+        width: 100%;
+    }
+    .about div h2 {
+        font-size: 18px;
+        text-align: center;
+        background-image: none;
+        background-color: rgba(255, 255, 255, 0.938);
+        background-size: 80vh 30vh;
+        border-radius: 8px;
+    }
+    form {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 683px) {
+    .services {
+        text-align: center;
+    }
+    .health img,
+    .banking img {
+        margin-right: 0;
+        width: 133px;
+        height: 133px;
+    }
+    .health,
+    .banking {
+        flex-direction: column;
+        text-align: center;
+    }
+    .health p,
+    .banking p {
+        text-align: center;
+    }
+    .services a:last-child {
+        font-size: 15px;
+        width: 100%;
+    }
+    form {
+        height: 440px;
+    }
+    form h3 {
+        font-size: 18px;
+        margin-bottom: 8px;
+    }
+    form button {
+        font-size: 12px;
+    }    
+}

@@ -1,0 +1,287 @@
+nav a[href="#"] {
+    color: #2FB9D8;
+}
+.sobre-arrow,
+.servicos-arrow,
+.blog-arrow {
+    visibility: hidden;
+}
+.contato-arrow {
+    position: relative;
+    top: 20px;
+    right: 40px;
+}
+.top-bar {
+    width: 100%;
+    height: 202px;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-image: url("/images/global/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/*contato-------------------------------------------------------------------------------*/
+.contato {
+    width: 100%;
+    padding: 80px 10% 37px 10%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contato h1 {
+    font-size: 35px;
+    font-weight: 800;
+    letter-spacing: .2em;
+    line-height: 42px;
+    text-align: center;
+    color: #FFFFFF;
+
+    margin-bottom: 27px;
+}
+.contato span {
+    width: 30%;
+    height: 5px;
+
+    background-color: #FFFFFF;
+
+    margin-bottom: 43px;
+}
+.contato p {
+    max-width: 815px;
+
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: .05em;
+    line-height: 20px;
+    color: #FFFFFF;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+form {
+    margin-top: 36px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    max-width: 1042px;
+
+    background-color: #E1E1E1;
+    border-radius: 31px;
+    border: none;
+
+    padding: 35px 0px 35px 0px;
+}
+form h3 {
+    font-size: 24px;
+    font-weight: 800;
+    letter-spacing: .1em;
+    line-height: 24px;
+    text-align: center;
+    color: #000000;
+
+    margin-bottom: 4px;
+}
+form p:first-of-type {
+    width: 90%;
+    max-width: 336px;
+
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 17px;
+    text-align: center;
+
+    color: #000000;
+
+    margin-bottom: 33px;
+}
+form input {
+    width: 90%;
+    max-width: 507px;
+    height: 33px;
+
+    border-radius: 20px;
+    border: 1px solid #FFFFFF;
+    outline: none;
+    background-color: #F2F2F2;
+
+    padding: 0px 22px;
+    margin-bottom: 21px;
+
+    color: #000000;
+}
+form input::placeholder {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    line-height: 17px;
+    
+    color: #969696;
+}
+form button {
+    margin-top: 17px;
+
+    width: 100%;
+    max-width: 202px;
+    height: 58px;
+
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 17px;
+    color: #FFFFFF;
+
+    background-color: #000000;
+    border-radius: 15px;
+
+    border: none;
+    outline: none;
+
+    transition: .2s;
+}
+form button:hover {
+    background-color: #2FB9D8;
+}
+/*mensagem-------------------------------------------------------------------------------*/
+.mensagem {
+    width: 100%;
+    padding: 37px 10% 30.64px 10%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mensagem h2 {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: .1em;
+    line-height: 35px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    margin-bottom: 14px;
+}
+.mensagem span {
+    width: 30%;
+    height: 5px;
+
+    background-color: #FFFFFF;
+
+    margin-bottom: 49px;
+}
+.mensagem button {
+    width: 100%;
+    max-width: 468px;
+    height: 79.72px;
+
+    background-color: #00A859;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 22px;
+    color: #FFFFFF;
+
+    transition: .2s;
+
+    padding: 0px 10%;
+}
+.mensagem button img {
+    margin-right: 17.5px;
+}
+.mensagem button:hover {
+    background-color: #027c43;
+}
+
+/*local-------------------------------------------------------------------------------*/
+.local {
+    width: 100%;
+    padding: 30.64px 10% 239px 10%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.local p {
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: .05em;
+    line-height: 25px;
+    text-align: center;
+
+    color: #FFFFFF;
+
+    margin-bottom: 25px;
+}
+.local address {
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: .05em;
+    line-height: 22px;
+    text-align: left;
+
+    color: #FFFFFF;
+
+    margin-bottom: 30px;
+}
+.local iframe {
+    width: 100%;
+    max-width: 1042px;
+    height: 456px;
+}
+
+
+
+
+@media screen and (max-width: 1023px) {
+    .top-bar {
+        height: 263px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    nav a[href="#"] {
+        color: #000000;
+    }
+    .top-bar {
+        height: 226px;
+    }
+    .contato h1 {
+        font-size: 28px;
+        text-align: left;
+    }
+    form h3 {
+        width: 95%;
+
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    form input {
+        max-width: 270px;
+    }
+    .mensagem h2 {
+        font-size: 20px;
+    }
+    .mensagem button {
+        font-size: 14px;
+    }
+    .local address {
+        font-size: 14px;
+    }
+}

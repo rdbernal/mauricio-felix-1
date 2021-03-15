@@ -1,0 +1,228 @@
+nav a[href="#"] {
+    color: #2FB9D8;
+}
+.servicos-arrow,
+.blog-arrow,
+.contato-arrow {
+    visibility: hidden;
+}
+* {
+    color: #FFFFFF;
+}
+.sobre-arrow {
+    position: relative;
+    top: 20px;
+    right: 32px;
+}
+.top-bar {
+    width: 100%;
+    height: 202px;
+}
+main {
+    background-image: url("/images/global/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+/*sobre----------------------------------------------------------------------------------------------*/
+.sobre {
+    /* padding: 72px 10% 208px 10%; */
+    padding: 71px 10% 188px 10%; /*188 tirando 20 da margem do último parágrafo*/
+}
+.sobre h2 {
+    font-size: 31px;
+    font-weight: 800;
+    letter-spacing: .3em;
+    line-height: 37px;
+
+    margin-bottom: 20px;    
+}
+.sobre p {
+    font-size: 14px;
+    letter-spacing: 0.05em;
+    line-height: 20px;
+    text-align: justify;
+
+    margin-bottom: 20px;
+}
+
+/*liderança-------------------------------------------------------------------------------------------*/
+.lideranca {
+    padding: 222px 10% 60px 10%;
+    position: relative;
+
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.lideranca img {
+    max-width: 363px;
+    position: absolute;
+    top: -175px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.lideranca h2 {
+    font-size: 40px;
+    font-weight: 800; 
+    letter-spacing: 0.3em;
+    line-height: 48px;
+}
+.titulo-lideranca {
+    width: 100%;
+    display: flex;
+
+    margin-bottom: 26px;
+}
+.titulo-lideranca span {
+    width: 100%;
+    height: 12px;
+
+    background-color: #FFFFFF;
+
+    position: relative;
+    top: 25px;
+}
+.lideranca p {
+    font-size: 14px;
+    font-weight: 400; 
+    letter-spacing: .05em;
+    line-height: 20px;
+    text-align: justify;
+
+    margin-bottom: 20px;
+}
+
+/*galeria---------------------------------------------------------------------------------------------*/
+.galeria {
+    /* padding: 62px 10% 513px 10%; */
+    padding: 62px 10% 168px 10%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.galeria h2 {
+    font-size: 40px;
+    font-weight: 800; 
+    letter-spacing: 0.3em;
+    line-height: 48px;
+}
+.titulo-galeria {
+    width: 100%;
+    display: flex;
+
+    margin-bottom: 26px;
+}
+.titulo-galeria span {
+    width: 100%;
+    height: 12px;
+
+    background-color: #FFFFFF;
+
+    position: relative;
+    top: 25px;
+}
+.galeria p {
+    font-size: 16px;
+    font-weight: 400; 
+    letter-spacing: 0.05em;
+    line-height: 20px;
+
+    align-self: flex-start;
+
+    margin-bottom: 38px;
+}
+.imagens {
+    margin-bottom: 38px;
+}
+.galeria1 {
+    position: relative;
+    left: 40px;
+    z-index: 0;
+}
+.galeria2 {
+    position: relative;
+    z-index: 1;
+}
+.galeria3 {
+    position: relative;
+    right: 40px;
+    z-index: 2;
+}
+.galeria-seletor {
+    display: flex;
+    align-items: center;
+}
+.galeria-seletor span {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%; 
+    border: solid 1px white;
+
+    margin: 5px 6px 7px 6px;
+}
+/*media queries---------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1271px) {
+    .imagens {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagens img {
+        width: 35%;
+        height: auto;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .top-bar {
+        height: 263px;
+    }
+}
+@media screen and (max-width: 767px) {
+    nav a[href="#"] {
+        color: #000000;
+    }
+    .top-bar {
+        height: 226px;
+    }
+    .sobre h2 {
+        font-size: 22px;
+    }
+    .sobre p {
+        text-align: left;
+    }
+    .lideranca h2 {
+        font-size: 28px;
+    }
+    .lideranca img {
+        top: 0px;
+        transform: translate(-50%,-50%);
+        width: 80%;
+    }
+    .titulo-lideranca span,
+    .titulo-galeria span {
+        display: none;
+    }
+    .galeria h2 {
+        font-size: 28px;
+    }
+    .imagens {
+        flex-direction: column;
+    }
+    .imagens img {
+        width: 100%;
+        height: auto;
+    }
+    .galeria1 {
+        left: 0px;
+        top: 40px;
+    }
+    .galeria3 {
+        right: 0px;
+        bottom: 40px;
+    }
+}

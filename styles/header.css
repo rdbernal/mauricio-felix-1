@@ -1,0 +1,110 @@
+header {
+    position: absolute;
+    top: 50px;
+    left: 15%; 
+}
+nav {
+    position: absolute;
+    top: 139px;
+    right: 15%;
+
+    width: 40%;
+}
+nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: space-between;
+}
+nav ul a {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    color: #FFFFFF;
+
+    transition: .2s;
+}
+nav ul a:hover {
+    color: #2FB9D8;
+}
+.burger-menu {
+    display: none;
+}
+.burger-menu div {
+    width: 20px;
+    height: 3px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    margin: 5px;
+    transition: .4s;
+}
+.select .line1 {
+    transform: rotate(-45deg) translate(-6px,5px);
+}
+.select .line2 {
+    opacity: 0;
+}
+.select .line3 {
+    transform: rotate(45deg) translate(-6px,-5px);
+}
+@media screen and (max-width: 1023px) {
+    header {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    nav {
+        top: 200px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        width: 70%;
+    }
+}
+@media screen and (max-width: 767px) {
+    header {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        padding-right: 3vh;
+        padding-left: 3vh;
+    }
+    nav {
+        position: fixed;
+        top: 185px;
+        width: 100%;
+        height: calc(100vh - 185px);
+        background-color: #FFFFFF;
+
+        transform: translateX(-250%);
+        opacity: 0;
+        transition: .4s;
+        transition-timing-function: ease;
+
+        padding-top: 10%;
+    }
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul li {
+        line-height: 1.5;
+        border-bottom: solid 1px black;
+        margin-bottom: 15%;
+    }
+    nav ul a {
+        color: #000000;
+    }
+    .down-arrow {
+        display: none;
+    }
+    .nav-active {
+        transform: translate(-50%, 0%);
+        opacity: 1;
+    }
+    .burger-menu {
+        display: block;
+    }
+}

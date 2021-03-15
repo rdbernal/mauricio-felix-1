@@ -1,0 +1,261 @@
+nav a[href="#"] {
+    color: #2FB9D8;
+}
+.sobre-arrow,
+.blog-arrow,
+.contato-arrow {
+    visibility: hidden;
+}
+.servicos-arrow {
+    position: relative;
+    top: 20px;
+    right: 41px;
+}
+.top-bar {
+    width: 100%;
+    height: 202px;
+}
+/*banner----------------------------------------------------------------------------------------------*/
+.banner-servicos {
+    background-image: url("/images/servicos/banner-servicos-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    height: 343px;
+}
+.banner-servicos div {
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.65);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner-servicos h1 {
+    font-size: 40px;
+    font-weight: 800;
+    letter-spacing: 0.3em;
+    line-height: 48px;
+
+    color: #FFFFFF;
+}
+/*serviços--------------------------------------------------------------------------------------------*/
+.servicos {
+    background-image: url("/images/global/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 84px 10% 206px 10%;
+}
+.servicos h2 {
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: .3em;
+    line-height: 35px;
+
+    color: #FFFFFF;
+
+    /* margin-bottom: 18px; */
+    margin-bottom: 5px;
+}
+.servicos p {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: .05em;
+    line-height: 20px;
+    text-align: justify;
+
+    color: #FFFFFF;
+}
+.servicos img {
+    width: 120px;
+    height: auto;
+}
+.background1,
+.background2,
+.background3 {
+    width: 330px;
+    height: 330px;
+
+    border-radius: 50%;
+}
+.text {
+    width: 60%;
+}
+.trabalhista {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+.trabalhista p:first-of-type {
+    margin-bottom: 15px;
+}
+.background1 {
+    background-image: url("/images/servicos/trabalhista-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    margin-right: 32px;
+}
+.background1 div {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    background-color: rgba(1, 141, 172, 0.8);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.bancario {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+
+    margin-bottom: 50px;
+}
+.background2 {
+    background-image: url("/images/servicos/bancario-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    margin-left: 32px;
+}
+.background2 div {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    background-color: rgba(1, 141, 172, 0.8);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.saude {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.saude p:first-of-type {
+    margin-bottom: 15px;
+}
+.background3 {
+    background-image: url("/images/servicos/saude-background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    margin-right: 32px;
+}
+.background3 div {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+    background-color: rgba(1, 141, 172, 0.8);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.titulo {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.titulo span {
+    width: 100%;
+    height: 6px;
+    background-color: #FFFFFF;
+
+    position: relative;
+
+    margin-bottom: 15px;
+}
+.bancario h2 {
+    align-self: flex-end;
+}
+.bancario span {
+    align-self: flex-end;
+}
+/*media queries----------------------------------------------------------------------------------------*/
+@media screen and (max-width: 1131px) {
+    .trabalhista,
+    .bancario,
+    .saude {
+        flex-direction: column;
+    }
+    .servicos h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .servicos p {
+        text-align: justify;
+    }
+    .background1, 
+    .background2,
+    .background3 {
+        margin: 0px 0px 43px 0px;
+    }
+    .text {
+        width: 100%;
+    }
+    .titulo span {
+        width: 50%;
+        align-self: flex-start;
+    }
+    .bancario h2 {
+        align-self: center;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .top-bar {
+        height: 263px;
+    }
+    .banner-servicos h1 {
+        text-align: center;
+    }
+    
+}
+@media screen and (max-width: 767px) {
+    nav a[href="#"] {
+        color: #000000;
+    }
+    .top-bar {
+        height: 226px;
+    }
+    .banner-servicos h1 {
+        font-size: 22px;
+    }
+    .servicos h2 {
+        font-size: 22px;
+    }
+
+    .servicos img {
+        width: 80px;
+        height: auto;
+    }
+    .background1, 
+    .background2, 
+    .background3 {
+        width: 230px;
+        height: 230px;
+    }
+}

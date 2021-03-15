@@ -1,0 +1,27 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+}
+html {
+    background: #1F1F1F;
+}
+body {
+    width: 100%;
+    max-width: 1440px;
+    margin: 0 auto;
+    position: relative;
+}
+.body-fixed {
+    position: fixed;
+}
+nav ul a {
+    color: #000000;
+}
+
+@media screen and (max-width: 767px) {
+    nav ul img {
+        display: none;
+    }
+}
